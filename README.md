@@ -1,5 +1,5 @@
 # Runtime_umengDome
-Using the runtime to realize the function of accessing the app page of.利用runtime实现友盟app页面访问路径功能 http://www.jianshu.com/p/90c1d676d27c
+Using the runtime to realize the function of accessing the app page of.利用runtime实现友盟app页面访问路径功能 简书地址：http://www.jianshu.com/p/90c1d676d27c
 >上个版本产品说运营有这样的需求，苦逼的程序员敲代码了，然后赶紧打开友盟看到如下文档：
 
 
