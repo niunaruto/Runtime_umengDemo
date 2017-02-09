@@ -40,6 +40,7 @@ Using the runtime to realize the function of accessing the app page of.利用run
         method_exchangeImplementations(viewWillDisappear, new_viewWillDisappear);
         }
 - 实现替换的方法 （self.title就是每个导航栏上的title，对于没有使用导航栏或者是导航栏title并不能区分是哪个模块的那个页面，（都是商品详情页，但是一个是品牌馆模块，一个是超市模块）[这种情况需要给系统的UIViewController添加自定义属性]()）标记问题1
+      
         - (void)new_viewWillAppear:(BOOL)animated{
         if (self.title.length) {
 
