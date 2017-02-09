@@ -1,4 +1,4 @@
-# Runtime_umengDome
+# Runtime_umengDemo
 Using the runtime to realize the function of accessing the app page of.利用runtime实现友盟app页面访问路径功能 简书地址：http://www.jianshu.com/p/90c1d676d27c
 >上个版本产品说运营有这样的需求，苦逼的程序员敲代码了，然后赶紧打开友盟看到如下文档：
 
@@ -20,7 +20,7 @@ Using the runtime to realize the function of accessing the app page of.利用run
 3：执行对应的统计方法beginLogPageView和endLogPageView
 4: 继续执行原来方法
 
-[不想看文章的直接可以下载代码dome，觉得不错的请给我star谢谢😀](https://github.com/niunaruto/Runtime_umengDome)
+[不想看文章的直接可以下载代码Demo，觉得不错的请给我star谢谢😀](https://github.com/niunaruto/Runtime_umengDemo)
 
 - 创建UIViewController的分类UIViewController+AS.h
 - 在.m里实现load类方法
