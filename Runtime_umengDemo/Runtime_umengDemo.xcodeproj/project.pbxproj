@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		0034A82514343CED45C6800A /* Pods-Runtime_umengDome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runtime_umengDome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Runtime_umengDome/Pods-Runtime_umengDome.debug.xcconfig"; sourceTree = "<group>"; };
 		B231CBC3B1CE9F9712963662 /* libPods-Runtime_umengDome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Runtime_umengDome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA677661E4C49A700955297 /* Runtime_umengDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runtime_umengDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA677661E4C49A700955297 /* Runtime_umengDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runtime_umengDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA6776A1E4C49A700955297 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEA6776C1E4C49A700955297 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEA6776D1E4C49A700955297 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,10 +51,10 @@
 		CEA677751E4C49A700955297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA677781E4C49A700955297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA6777A1E4C49A700955297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEA6777F1E4C49A700955297 /* Runtime_umengDomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Runtime_umengDomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA6777F1E4C49A700955297 /* Runtime_umengDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Runtime_umengDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA677831E4C49A700955297 /* Runtime_umengDomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Runtime_umengDomeTests.m; sourceTree = "<group>"; };
 		CEA677851E4C49A700955297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEA6778A1E4C49A700955297 /* Runtime_umengDomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Runtime_umengDomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA6778A1E4C49A700955297 /* Runtime_umengDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Runtime_umengDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA6778E1E4C49A700955297 /* Runtime_umengDomeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Runtime_umengDomeUITests.m; sourceTree = "<group>"; };
 		CEA677901E4C49A700955297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA6779C1E4C4A4200955297 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		CEA6775D1E4C49A700955297 = {
 			isa = PBXGroup;
 			children = (
-				CEA677681E4C49A700955297 /* Runtime_umengDome */,
+				CEA677681E4C49A700955297 /* Runtime_umengDemo */,
 				CEA677821E4C49A700955297 /* Runtime_umengDomeTests */,
 				CEA6778D1E4C49A700955297 /* Runtime_umengDomeUITests */,
 				CEA677671E4C49A700955297 /* Products */,
@@ -115,14 +115,14 @@
 		CEA677671E4C49A700955297 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEA677661E4C49A700955297 /* Runtime_umengDome.app */,
-				CEA6777F1E4C49A700955297 /* Runtime_umengDomeTests.xctest */,
-				CEA6778A1E4C49A700955297 /* Runtime_umengDomeUITests.xctest */,
+				CEA677661E4C49A700955297 /* Runtime_umengDemo.app */,
+				CEA6777F1E4C49A700955297 /* Runtime_umengDemoTests.xctest */,
+				CEA6778A1E4C49A700955297 /* Runtime_umengDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CEA677681E4C49A700955297 /* Runtime_umengDome */ = {
+		CEA677681E4C49A700955297 /* Runtime_umengDemo */ = {
 			isa = PBXGroup;
 			children = (
 				CEA6776C1E4C49A700955297 /* AppDelegate.h */,
@@ -141,6 +141,7 @@
 				CEA6777A1E4C49A700955297 /* Info.plist */,
 				CEA677691E4C49A700955297 /* Supporting Files */,
 			);
+			name = Runtime_umengDemo;
 			path = Runtime_umengDome;
 			sourceTree = "<group>";
 		};
@@ -182,9 +183,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEA677651E4C49A700955297 /* Runtime_umengDome */ = {
+		CEA677651E4C49A700955297 /* Runtime_umengDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEA677931E4C49A700955297 /* Build configuration list for PBXNativeTarget "Runtime_umengDome" */;
+			buildConfigurationList = CEA677931E4C49A700955297 /* Build configuration list for PBXNativeTarget "Runtime_umengDemo" */;
 			buildPhases = (
 				C117B11711FE737973580CBC /* [CP] Check Pods Manifest.lock */,
 				CEA677621E4C49A700955297 /* Sources */,
@@ -197,14 +198,14 @@
 			);
 			dependencies = (
 			);
-			name = Runtime_umengDome;
+			name = Runtime_umengDemo;
 			productName = Runtime_umengDome;
-			productReference = CEA677661E4C49A700955297 /* Runtime_umengDome.app */;
+			productReference = CEA677661E4C49A700955297 /* Runtime_umengDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CEA6777E1E4C49A700955297 /* Runtime_umengDomeTests */ = {
+		CEA6777E1E4C49A700955297 /* Runtime_umengDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEA677961E4C49A700955297 /* Build configuration list for PBXNativeTarget "Runtime_umengDomeTests" */;
+			buildConfigurationList = CEA677961E4C49A700955297 /* Build configuration list for PBXNativeTarget "Runtime_umengDemoTests" */;
 			buildPhases = (
 				CEA6777B1E4C49A700955297 /* Sources */,
 				CEA6777C1E4C49A700955297 /* Frameworks */,
@@ -215,14 +216,14 @@
 			dependencies = (
 				CEA677811E4C49A700955297 /* PBXTargetDependency */,
 			);
-			name = Runtime_umengDomeTests;
+			name = Runtime_umengDemoTests;
 			productName = Runtime_umengDomeTests;
-			productReference = CEA6777F1E4C49A700955297 /* Runtime_umengDomeTests.xctest */;
+			productReference = CEA6777F1E4C49A700955297 /* Runtime_umengDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CEA677891E4C49A700955297 /* Runtime_umengDomeUITests */ = {
+		CEA677891E4C49A700955297 /* Runtime_umengDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEA677991E4C49A700955297 /* Build configuration list for PBXNativeTarget "Runtime_umengDomeUITests" */;
+			buildConfigurationList = CEA677991E4C49A700955297 /* Build configuration list for PBXNativeTarget "Runtime_umengDemoUITests" */;
 			buildPhases = (
 				CEA677861E4C49A700955297 /* Sources */,
 				CEA677871E4C49A700955297 /* Frameworks */,
@@ -233,9 +234,9 @@
 			dependencies = (
 				CEA6778C1E4C49A700955297 /* PBXTargetDependency */,
 			);
-			name = Runtime_umengDomeUITests;
+			name = Runtime_umengDemoUITests;
 			productName = Runtime_umengDomeUITests;
-			productReference = CEA6778A1E4C49A700955297 /* Runtime_umengDomeUITests.xctest */;
+			productReference = CEA6778A1E4C49A700955297 /* Runtime_umengDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -263,7 +264,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CEA677611E4C49A700955297 /* Build configuration list for PBXProject "Runtime_umengDome" */;
+			buildConfigurationList = CEA677611E4C49A700955297 /* Build configuration list for PBXProject "Runtime_umengDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -276,9 +277,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEA677651E4C49A700955297 /* Runtime_umengDome */,
-				CEA6777E1E4C49A700955297 /* Runtime_umengDomeTests */,
-				CEA677891E4C49A700955297 /* Runtime_umengDomeUITests */,
+				CEA677651E4C49A700955297 /* Runtime_umengDemo */,
+				CEA6777E1E4C49A700955297 /* Runtime_umengDemoTests */,
+				CEA677891E4C49A700955297 /* Runtime_umengDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -393,12 +394,12 @@
 /* Begin PBXTargetDependency section */
 		CEA677811E4C49A700955297 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CEA677651E4C49A700955297 /* Runtime_umengDome */;
+			target = CEA677651E4C49A700955297 /* Runtime_umengDemo */;
 			targetProxy = CEA677801E4C49A700955297 /* PBXContainerItemProxy */;
 		};
 		CEA6778C1E4C49A700955297 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CEA677651E4C49A700955297 /* Runtime_umengDome */;
+			target = CEA677651E4C49A700955297 /* Runtime_umengDemo */;
 			targetProxy = CEA6778B1E4C49A700955297 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -543,7 +544,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "niuNatuto.Runtime-umengDomeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runtime_umengDome.app/Runtime_umengDome";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runtime_umengDemo.app/Runtime_umengDemo";
 			};
 			name = Debug;
 		};
@@ -555,7 +556,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "niuNatuto.Runtime-umengDomeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runtime_umengDome.app/Runtime_umengDome";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runtime_umengDemo.app/Runtime_umengDemo";
 			};
 			name = Release;
 		};
@@ -584,7 +585,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEA677611E4C49A700955297 /* Build configuration list for PBXProject "Runtime_umengDome" */ = {
+		CEA677611E4C49A700955297 /* Build configuration list for PBXProject "Runtime_umengDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEA677911E4C49A700955297 /* Debug */,
@@ -593,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEA677931E4C49A700955297 /* Build configuration list for PBXNativeTarget "Runtime_umengDome" */ = {
+		CEA677931E4C49A700955297 /* Build configuration list for PBXNativeTarget "Runtime_umengDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEA677941E4C49A700955297 /* Debug */,
@@ -602,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEA677961E4C49A700955297 /* Build configuration list for PBXNativeTarget "Runtime_umengDomeTests" */ = {
+		CEA677961E4C49A700955297 /* Build configuration list for PBXNativeTarget "Runtime_umengDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEA677971E4C49A700955297 /* Debug */,
@@ -611,7 +612,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEA677991E4C49A700955297 /* Build configuration list for PBXNativeTarget "Runtime_umengDomeUITests" */ = {
+		CEA677991E4C49A700955297 /* Build configuration list for PBXNativeTarget "Runtime_umengDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEA6779A1E4C49A700955297 /* Debug */,
