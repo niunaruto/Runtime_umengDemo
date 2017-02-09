@@ -1,6 +1,9 @@
 # Runtime_umengDemo
-Using the runtime to realize the function of accessing the app page of.利用runtime实现友盟app页面访问路径功能 简书地址：http://www.jianshu.com/p/90c1d676d27c
->上个版本产品说运营有这样的需求，苦逼的程序员敲代码了，然后赶紧打开友盟看到如下文档：
+Using the runtime to realize the function of accessing the app page of.利用runtime实现友盟app页面访问路径功能 
+
+### 简书博客地址：http://www.jianshu.com/p/90c1d676d27c
+
+>上个版本产品说运营有这样的需求，苦逼的程序员敲代码了，然后赶紧打开友盟看到如下文档：[图片看不到点我](http://upload-images.jianshu.io/upload_images/609618-c76e6f85902c7f6a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
@@ -38,26 +41,27 @@ method_exchangeImplementations(viewWillDisappear, new_viewWillDisappear);
 }
 - 实现替换的方法 （self.title就是每个导航栏上的title，对于没有使用导航栏或者是导航栏title并不能区分是哪个模块的那个页面，（都是商品详情页，但是一个是品牌馆模块，一个是超市模块）[这种情况需要给系统的UIViewController添加自定义属性]()）标记问题1
 - (void)new_viewWillAppear:(BOOL)animated{
-if (self.title.length) {
+    if (self.title.length) {
 
-[MobClick beginLogPageView:self.title];
-NSLog(@"路径开始%@==%@  %s",NSStringFromClass(self.class),self.title,__func__);
-}
-[self new_viewWillAppear:animated];
+        [MobClick beginLogPageView:self.title];
+        NSLog(@"路径开始%@==%@  %s",NSStringFromClass(self.class),self.title,__func__);
+        }
+        [self new_viewWillAppear:animated];
 }
 
 - (void)new_viewWillDisappear:(BOOL)animated{
-if (self.title.length) {
-NSLog(@"路径结束%@==%@ == %s",NSStringFromClass(self.class),self.title,__func__);
-[MobClick endLogPageView:self.title];
-}
-[self new_viewWillDisappear:animated];
+    if (self.title.length) {
+
+        NSLog(@"路径结束%@==%@ == %s",NSStringFromClass(self.class),self.title,__func__);
+        [MobClick endLogPageView:self.title];
+    }
+        [self new_viewWillDisappear:animated];
 }
 
 - 我们的代码规范是在每个VC的loadView方法里去写一些当前vc显示的相关的代码.比如在AViewController里，可以这样：
 - (void)loadView{
-[super loadView];
-self.title = @"我是AVC界面";
+     [super loadView];
+   self.title = @"我是AVC界面";
 }
 #以上就可以少量代码实现行为路径的统计，具体可以看代码，毕竟代码才是程序员沟通的语言😀
 
@@ -68,7 +72,7 @@ self.title = @"我是AVC界面";
 - 重写set get方法
 - (void)setUmengLogAs:(NSString *)umengLogAs{
 
-objc_setAssociatedObject(self, @selector(umengLogAs), umengLogAs, OBJC_ASSOCIATION_COPY_NONATOMIC);
+        objc_setAssociatedObject(self, @selector(umengLogAs), umengLogAs, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 - (NSString *)umengLogAs
