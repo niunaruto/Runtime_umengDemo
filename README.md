@@ -28,41 +28,41 @@ Using the runtime to realize the function of accessing the app page of.利用run
 - 创建UIViewController的分类UIViewController+AS.h
 - 在.m里实现load类方法
 
-+ (void)load
-{
+        + (void)load
+        {
 
-Method viewWillAppear = class_getInstanceMethod(self, @selector(viewWillAppear:));
-Method new_viewWillAppear = class_getInstanceMethod(self, @selector(new_viewWillAppear:));
-method_exchangeImplementations(viewWillAppear, new_viewWillAppear);
+        Method viewWillAppear = class_getInstanceMethod(self, @selector(viewWillAppear:));
+        Method new_viewWillAppear = class_getInstanceMethod(self, @selector(new_viewWillAppear:));
+        method_exchangeImplementations(viewWillAppear, new_viewWillAppear);
 
-Method viewWillDisappear = class_getInstanceMethod(self, @selector(viewWillDisappear:));
-Method new_viewWillDisappear = class_getInstanceMethod(self, @selector(new_viewWillDisappear:));
-method_exchangeImplementations(viewWillDisappear, new_viewWillDisappear);
-}
+        Method viewWillDisappear = class_getInstanceMethod(self, @selector(viewWillDisappear:));
+        Method new_viewWillDisappear = class_getInstanceMethod(self, @selector(new_viewWillDisappear:));
+        method_exchangeImplementations(viewWillDisappear, new_viewWillDisappear);
+        }
 - 实现替换的方法 （self.title就是每个导航栏上的title，对于没有使用导航栏或者是导航栏title并不能区分是哪个模块的那个页面，（都是商品详情页，但是一个是品牌馆模块，一个是超市模块）[这种情况需要给系统的UIViewController添加自定义属性]()）标记问题1
-- (void)new_viewWillAppear:(BOOL)animated{
-    if (self.title.length) {
+        - (void)new_viewWillAppear:(BOOL)animated{
+        if (self.title.length) {
 
         [MobClick beginLogPageView:self.title];
         NSLog(@"路径开始%@==%@  %s",NSStringFromClass(self.class),self.title,__func__);
         }
         [self new_viewWillAppear:animated];
-}
+        }
 
-- (void)new_viewWillDisappear:(BOOL)animated{
-    if (self.title.length) {
+        - (void)new_viewWillDisappear:(BOOL)animated{
+            if (self.title.length) {
 
-        NSLog(@"路径结束%@==%@ == %s",NSStringFromClass(self.class),self.title,__func__);
-        [MobClick endLogPageView:self.title];
-    }
-        [self new_viewWillDisappear:animated];
-}
+                NSLog(@"路径结束%@==%@ == %s",NSStringFromClass(self.class),self.title,__func__);
+                [MobClick endLogPageView:self.title];
+            }
+                [self new_viewWillDisappear:animated];
+        }
 
 - 我们的代码规范是在每个VC的loadView方法里去写一些当前vc显示的相关的代码.比如在AViewController里，可以这样：
-- (void)loadView{
-     [super loadView];
-   self.title = @"我是AVC界面";
-}
+        - (void)loadView{
+             [super loadView];
+           self.title = @"我是AVC界面";
+        }
 #以上就可以少量代码实现行为路径的统计，具体可以看代码，毕竟代码才是程序员沟通的语言😀
 
 >使用runtime给系统类添加属性
@@ -70,16 +70,16 @@ method_exchangeImplementations(viewWillDisappear, new_viewWillDisappear);
 
 - 在分类UIViewController+AS.h 中声明一个属性为@property (copy, nonatomic) NSString *umengLogAs;
 - 重写set get方法
-- (void)setUmengLogAs:(NSString *)umengLogAs{
+        - (void)setUmengLogAs:(NSString *)umengLogAs{
 
-        objc_setAssociatedObject(self, @selector(umengLogAs), umengLogAs, OBJC_ASSOCIATION_COPY_NONATOMIC);
-}
+                objc_setAssociatedObject(self, @selector(umengLogAs), umengLogAs, OBJC_ASSOCIATION_COPY_NONATOMIC);
+        }
 
-- (NSString *)umengLogAs
-{
-// 根据关联的key，获取关联的值。
-return objc_getAssociatedObject(self,  _cmd) ;
-}
+        - (NSString *)umengLogAs
+        {
+        // 根据关联的key，获取关联的值。
+        return objc_getAssociatedObject(self,  _cmd) ;
+        }
 打完，手工！
 
 > _cmd 是什么： 在Apple的官方介绍里看到轻描淡写的说了一句：“The _cmd variable is a hidden argument passed to every method that is the current selector”，其实说的就是_cmd在Objective-C的方法中表示当前方法的selector，正如同self表示当前方法调用的对象实例一样。
