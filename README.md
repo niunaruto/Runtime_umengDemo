@@ -70,6 +70,7 @@ Using the runtime to realize the function of accessing the app page of.利用run
 
 - 在分类UIViewController+AS.h 中声明一个属性为@property (copy, nonatomic) NSString *umengLogAs;
 - 重写set get方法
+
         - (void)setUmengLogAs:(NSString *)umengLogAs{
 
                 objc_setAssociatedObject(self, @selector(umengLogAs), umengLogAs, OBJC_ASSOCIATION_COPY_NONATOMIC);
