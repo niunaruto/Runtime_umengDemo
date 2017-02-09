@@ -7,7 +7,7 @@ Using the runtime to realize the function of accessing the app page of.利用run
 
 
 
-![屏幕快照 2017-02-09 下午2.27.46.png](http://upload-images.jianshu.io/upload_images/609618-c76e6f85902c7f6a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![屏呵呵](http://upload-images.jianshu.io/upload_images/609618-c76e6f85902c7f6a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 >文档的意思是要在每个VC的viewWillAppear和viewWillDisAppear添加对应的代码来实现统计功能，看着这里想想我们的app，这么多模块和VC，如果每个界面都这样写势必工作量会很大，那有没有简单可行的办法呢？有啊，要不我写这篇文章干嘛
 
