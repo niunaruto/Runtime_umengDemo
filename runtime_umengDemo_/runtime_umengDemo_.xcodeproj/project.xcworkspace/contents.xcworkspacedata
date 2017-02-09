@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Runtime_umengDome.xcodeproj">
+      location = "self:runtime_umengDemo_.xcodeproj">
    </FileRef>
 </Workspace>

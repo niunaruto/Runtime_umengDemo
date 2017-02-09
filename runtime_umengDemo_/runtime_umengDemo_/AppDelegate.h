@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  Runtime_umengDome
+//  runtime_umengDemo_
 //
 //  Created by niuting on 2017/2/9.
 //  Copyright © 2017年 niuNaruto. All rights reserved.

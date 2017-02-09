@@ -1,6 +1,6 @@
 //
-//  Runtime_umengDomeTests.m
-//  Runtime_umengDomeTests
+//  runtime_umengDemo_Tests.m
+//  runtime_umengDemo_Tests
 //
 //  Created by niuting on 2017/2/9.
 //  Copyright © 2017年 niuNaruto. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface Runtime_umengDomeTests : XCTestCase
+@interface runtime_umengDemo_Tests : XCTestCase
 
 @end
 
-@implementation Runtime_umengDomeTests
+@implementation runtime_umengDemo_Tests
 
 - (void)setUp {
     [super setUp];
