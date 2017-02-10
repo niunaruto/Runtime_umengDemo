@@ -82,6 +82,6 @@ Using the runtime to realize the function of accessing the app page of.利用run
         // 根据关联的key，获取关联的值。
         return objc_getAssociatedObject(self,  _cmd) ;
         }
-打完，手工！
+打完，收工！
 
 > _cmd 是什么： 在Apple的官方介绍里看到轻描淡写的说了一句：“The _cmd variable is a hidden argument passed to every method that is the current selector”，其实说的就是_cmd在Objective-C的方法中表示当前方法的selector，正如同self表示当前方法调用的对象实例一样。
