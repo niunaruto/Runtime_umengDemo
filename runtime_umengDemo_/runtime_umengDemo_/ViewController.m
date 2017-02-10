@@ -15,7 +15,7 @@
 @implementation ViewController
 - (void)loadView{
     [super loadView];
-    self.title = @"当前是avc";
+    self.title = @"当前是avc"; // 这个 “当前是avc”就是被友盟统计到的路径页面信息
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
