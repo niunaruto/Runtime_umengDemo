@@ -23,7 +23,7 @@ Using the runtime to realize the function of accessing the app page of.利用run
 3：执行对应的统计方法beginLogPageView和endLogPageView
 4: 继续执行原来方法
 
-[不想看文章的直接可以下载代码Demo，觉得不错的请给我star谢谢😀](https://github.com/niunaruto/Runtime_umengDemo)
+## 不想看文章的直接可以下载代码Demo，觉得不错的请给我star谢谢😀
 
 - 创建UIViewController的分类UIViewController+AS.h
 - 在.m里实现load类方法
